@@ -1,4 +1,17 @@
 .display {
 	display: inline-block;
 	float: left;
+	margin: 20px;
+}
+
+button {
+	margin: 10px;
+}
+
+form {
+	margin: 10px;
+}
+
+input {
+	margin: 10px;
 }

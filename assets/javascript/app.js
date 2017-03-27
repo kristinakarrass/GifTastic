@@ -47,7 +47,7 @@ $(document).on("click", ".comedian", function(){
 			$(".gifs").prepend(giphyDiv);		}
 	})
 });
-
+//click evvent that changes animation state
 $(document).on("click", ".giphy", function(){
 	var state = $(this).attr("data-state");
 	if (state === "still") {
@@ -59,10 +59,15 @@ $(document).on("click", ".giphy", function(){
 	}
 });
 
+//click event that adds new button after user input
 $("#add-comedian").on("click", function(){
 	event.preventDefault();
 	var newComedian = $("#movie-input").val().trim();
+	if (newComedian === "") {
+		alert("Please choose a comedian!");
+	}else {
 	comedians.push(newComedian);
 	$("#movie-input").val("");
 	renderButtons();
+}
 });
