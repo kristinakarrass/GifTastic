@@ -41,9 +41,10 @@ $(document).on("click", ".comedian", function(){
 			giphy.attr("data-still", response.data[i].images.fixed_height_still.url);
 			giphy.attr("data-animate", response.data[i].images.fixed_height.url);
 			giphy.attr("alt", $(this).attr("data-name"));
-			rating = $("<p>").text(response.data[i].rating);
-			giphyDiv.append(rating);
+			rating = $("<p>").text("Rating: " + response.data[i].rating);
 			giphyDiv.append(giphy);
+			giphyDiv.append(rating);
+			
 			$(".gifs").prepend(giphyDiv);		}
 	})
 });
