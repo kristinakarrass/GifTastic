@@ -5,7 +5,7 @@ function renderButtons() {
 	//empty div to not have duplicates of buttons
     $(".buttons").empty();
 
-    for (i = 0; i < comedians.length; i++) {
+    for (var i = 0; i < comedians.length; i++) {
 
         var comButton = $("<button class='btn btn-info'>");
         comButton.attr("data-name", comedians[i]);
@@ -25,7 +25,7 @@ $(document).on("click", ".comedian", function(){
 	//clear gifs div to only have one set of gifs displayed
 	$(".gifs").html("");
 	var comedian = $(this).attr("data-name");
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + comedian + "&limit=10&rating=pg-13&api_key=dc6zaTOxFJmzC";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + comedian + "&limit=10&rating=pg-13&api_key=dc6zaTOxFJmzC";
 
 	$.ajax({
 		url: queryURL,
