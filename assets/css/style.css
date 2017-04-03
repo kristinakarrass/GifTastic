@@ -1,3 +1,7 @@
+body {
+	background-image: url(assets/images/background.jpg);
+
+}
 .display {
 	display: inline-block;
 	float: left;

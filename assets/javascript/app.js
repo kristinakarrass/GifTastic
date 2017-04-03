@@ -1,4 +1,4 @@
-var comedians = ["John Cleese", "Mike Myers", "Steve Martin", "Dan Aykroyd","Jimmy Fallon","Stephen Colbert", "Chris Rock", "Molly Shannon", "Tina Fey", "Bill Murray", "Will Ferrell","Alec Baldwin", "Melissa McCarthy", "Eddie Murphy"];
+var comedians = ["John Cleese", "Mike Myers", "Steve Martin","Dave Chappelle", "Sara Silverman", "Dan Aykroyd","Jimmy Fallon","Stephen Colbert", "Chris Rock", "Molly Shannon", "Tina Fey", "Bill Murray", "Will Ferrell","Alec Baldwin", "Melissa McCarthy", "Eddie Murphy"];
 
 //construct buttons and display them on screen
 function renderButtons() {
